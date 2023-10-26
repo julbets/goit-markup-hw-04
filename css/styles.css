@@ -299,7 +299,7 @@ width: 264px;
 }
 
 .team-member-description {
-    padding: 32px 0px 8px 0px;
+    padding: 32px 0px;
     text-align: center;
 }
 
@@ -312,9 +312,7 @@ width: 264px;
     padding: 12px;
     width: 40px;
     height: 40px;
-    fill: none;
-    stroke: #F4F4FD;
-
+    fill: #f4f4fd;
 }
 
 .team-member-social-media {
@@ -473,7 +471,7 @@ margin-bottom: 16px;
 footer .social-media {
     padding-left: 0;
     display: flex;
-    column-gap: 16px;
+    gap: 16px;
     width: 40px;
     height: 40px;
 }
