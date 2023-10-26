@@ -116,7 +116,6 @@ header .container {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    color: #2E2F42;
     padding: 24px 0;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -124,7 +123,6 @@ header .container {
 
 .menu-link:hover,
 .menu-link:focus {
-    
     color: #404BBF;
 }
 
@@ -310,14 +308,7 @@ width: 264px;
     gap: 24px;
 }
 
-.team-member-image {
-    padding: 32px 0px;
-    
-}
-
 .social-media-item-icon {
-    background-color: #4D5AE5;
-    border-radius: 50%;
     padding: 12px;
     width: 40px;
     height: 40px;
@@ -326,16 +317,29 @@ width: 264px;
 
 }
 
-.social-media {
+.team-member-social-media {
     display: flex;
-    column-gap: 24px;
+    justify-content: center;
+    gap: 24px;
     padding-left: 16px;
-    padding-bottom: 32px;;
+    padding-bottom: 32px;
+    width: 40px;
+    height: 40px;
 }
 
-.social-media-item-icon:hover {
-    background-color:#404BBF;
+.team-member-social-media-item-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+.team-member-social-media-item-link:hover,
+.team-member-social-media-item-link:focus {
+    background-color:#404BBF;
 }
 
 
@@ -447,8 +451,13 @@ footer .logotype {
     width: 264px;
 }
 
+.footer-logo {
+    margin-right: 120px;
+}
+
 footer .container {
     display: flex;
+    align-items: baseline;
     column-gap: 120px;
 }
 
@@ -463,11 +472,28 @@ margin-bottom: 16px;
 
 footer .social-media {
     padding-left: 0;
+    display: flex;
     column-gap: 16px;
+    width: 40px;
+    height: 40px;
 }
 
-footer .social-media-item-icon:hover {
-    background-color: #31D0AA;
+footer .social-media-item-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+footer .social-media-item-link:hover,
+footer .social-media-item-link:focus {
+    background-color: #31D0AA;
+}
+
+.social-media-item-icon {
+fill: #f4f4fd;
 }
